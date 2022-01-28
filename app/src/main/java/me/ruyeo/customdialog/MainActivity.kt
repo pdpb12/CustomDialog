@@ -16,5 +16,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupUI() {
 
+        Toast.makeText(this, "OgabekDev", Toast.LENGTH_SHORT).show()
     }
 }
