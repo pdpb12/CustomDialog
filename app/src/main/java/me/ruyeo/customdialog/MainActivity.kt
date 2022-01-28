@@ -10,5 +10,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         Toast.makeText(this, "dsa", Toast.LENGTH_SHORT).show()
+
+        setupUI()
+    }
+
+    private fun setupUI() {
+
     }
 }
