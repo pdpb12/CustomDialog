@@ -2,6 +2,7 @@ package me.ruyeo.customdialog
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
@@ -17,5 +18,9 @@ class MainActivity : AppCompatActivity() {
     private fun setupUI() {
 
         Toast.makeText(this, "OgabekDev", Toast.LENGTH_SHORT).show()
+    }
+
+    private fun initViews(){
+        Log.d("TAG", "initViews: assalom")
     }
 }
