@@ -10,12 +10,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         Toast.makeText(this, "dsa", Toast.LENGTH_SHORT).show()
-
-        setupUI()
     }
 
-    private fun setupUI() {
-
-        Toast.makeText(this, "OgabekDev", Toast.LENGTH_SHORT).show()
+    override fun onBackPressed() {
+        val dialog = ExitDialog("Do yo want to exit!!!")
+        dialog.onItemClick = {
+            finish()
+        }
+        dialog.show(supportFragmentManager,"something")
     }
 }
