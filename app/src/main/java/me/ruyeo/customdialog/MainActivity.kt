@@ -2,6 +2,7 @@ package me.ruyeo.customdialog
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
@@ -18,5 +19,9 @@ class MainActivity : AppCompatActivity() {
             finish()
         }
         dialog.show(supportFragmentManager,"something")
+    }
+
+    private fun initViews(){
+        Log.d("TAG", "initViews: assalom")
     }
 }
